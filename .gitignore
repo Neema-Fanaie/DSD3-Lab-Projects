@@ -54,14 +54,14 @@ Digital_Lab_W7Exam/Digital-Lab-W7Exam.xpr
 8_World_of_State_Machines/7-World-of-State-Machines.xpr
 
 # Snake Game Ignores
-Snake_Game_2015V/Snake_Game_2015V.cache
-Snake_Game_2015V/Snake_Game_2015V.hw
-Snake_Game_2015V/Snake_Game_2015V.xpr
+Snake_Game_Base/Snake_Game_2015V.cache
+Snake_Game_Base/Snake_Game_2015V.hw
+Snake_Game_Base/Snake_Game_2015V.xpr
 
-Snake_Game_Exam/Snake_Game_2015V.cache
-Snake_Game_Exam/Snake_Game_2015V.hw
-Snake_Game_Exam/Snake_Game_2015V.xpr
+Snake_Exam/Snake_Game_2015V.cache
+Snake_Exam/Snake_Game_2015V.hw
+Snake_Exam/Snake_Game_2015V.xpr
 
-Snake_Game++/Snake_Game_2015V.cache
-Snake_Game++/Snake_Game_2015V.hw
-Snake_Game++/Snake_Game_2015V.xpr
+Snake_Game_Extension/Snake_Game_2015V.cache
+Snake_Game_Extension/Snake_Game_2015V.hw
+Snake_Game_Extension/Snake_Game_2015V.xpr
