@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Oct 20 19:19:45 2025
+# Process ID: 24882
+# Log file: /home/s2475012/Desktop/Week2.1/Week2.1.runs/impl_1/Hello_synchronous_world.vdi
+# Journal file: /home/s2475012/Desktop/Week2.1/Week2.1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Hello_synchronous_world.tcl -notrace

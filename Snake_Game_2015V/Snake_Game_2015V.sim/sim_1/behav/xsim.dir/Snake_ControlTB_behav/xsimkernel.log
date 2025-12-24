@@ -1,0 +1,7 @@
+Running: xsim.dir/Snake_ControlTB_behav/xsimk -simmode gui -wdb Snake_ControlTB_behav.wdb -simrunnum 0 -socket 58697
+Design successfully loaded
+Design Loading Memory Usage: 93288 KB (Peak: 93380 KB)
+Design Loading CPU Usage: 70 ms
+Simulation completed
+Simulation Memory Usage: 236656 KB (Peak: 302192 KB)
+Simulation CPU Usage: 890 ms

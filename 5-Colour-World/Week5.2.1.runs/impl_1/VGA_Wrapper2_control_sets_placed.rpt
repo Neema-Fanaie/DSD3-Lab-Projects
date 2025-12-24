@@ -1,0 +1,62 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Fri Oct 24 14:49:13 2025
+| Host         : tlf15.see.ed.ac.uk running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_control_sets -verbose -file VGA_Wrapper2_control_sets_placed.rpt
+| Design       : VGA_Wrapper2
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     9 |
+| Minimum Number of register sites lost to control set restrictions |    54 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              21 |            8 |
+| No           | No                    | Yes                    |              12 |            4 |
+| No           | Yes                   | No                     |              31 |           11 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              10 |            3 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+--------------------------+------------------------------------+------------------+----------------+
+|          Clock Signal         |       Enable Signal      |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-------------------------------+--------------------------+------------------------------------+------------------+----------------+
+|  Clk_IBUF_BUFG                |                          | Reset_IBUF                         |                1 |              2 |
+|  TriggOut_BUFG                |                          |                                    |                1 |              2 |
+|  TriggOut_BUFG                |                          | VGA_Control/AddrV[8]_i_1_n_0       |                3 |              9 |
+|  FrGen/start_y_reg[8]_i_2_n_0 |                          |                                    |                3 |              9 |
+|  TriggOut_BUFG                |                          | Reset_IBUF                         |                3 |             10 |
+|  TriggOut_BUFG                |                          | VGA_Control/AddrH[9]_i_1_n_0       |                2 |             10 |
+|  TriggOut_BUFG                | VGA_Control/V[9]_i_1_n_0 | Reset_IBUF                         |                3 |             10 |
+|  FrGen/start_x_reg[9]_i_2_n_0 |                          |                                    |                4 |             10 |
+|  TriggOut_BUFG                |                          | VGA_Control/Colour_Out[11]_i_1_n_0 |                6 |             12 |
++-------------------------------+--------------------------+------------------------------------+------------------+----------------+
+
+

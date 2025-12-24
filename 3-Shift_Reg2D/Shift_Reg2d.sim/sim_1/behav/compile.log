@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/s2475012/Desktop/3-Shift_Reg2D/Shift_Reg2d.srcs/sources_1/imports/new/Shift_reg2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shift_reg2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/s2475012/Desktop/3-Shift_Reg2D/Shift_Reg2d.srcs/sim_1/imports/new/Shift_reg2DTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shift_reg2DTB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/s2475012/Desktop/3-Shift_Reg2D/Shift_Reg2d.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

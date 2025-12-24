@@ -1,0 +1,62 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Mon Oct 27 17:36:14 2025
+| Host         : tlb110.see.ed.ac.uk running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_control_sets -verbose -file Top_Wrapper_control_sets_placed.rpt
+| Design       : Top_Wrapper
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     9 |
+| Minimum Number of register sites lost to control set restrictions |    47 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              20 |           13 |
+| No           | No                    | Yes                    |               2 |            1 |
+| No           | Yes                   | No                     |              61 |           17 |
+| Yes          | No                    | No                     |              10 |            4 |
+| Yes          | No                    | Yes                    |               4 |            1 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------+-------------------------------------------------+----------------------------------------------------+------------------+----------------+
+|                 Clock Signal                |                  Enable Signal                  |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++---------------------------------------------+-------------------------------------------------+----------------------------------------------------+------------------+----------------+
+|  CLK_IBUF_BUFG                              |                                                 |                                                    |                2 |              2 |
+|  CLK_IBUF_BUFG                              |                                                 | Reset_IBUF                                         |                1 |              2 |
+|  Q1/Clk_Counter/Value_reg[0]                | Q1/Value[3]_i_1_n_0                             | Reset_IBUF                                         |                1 |              4 |
+|  TriggOut                                   |                                                 | VGA_Control/VGA_Control/Height_Counter/SR[0]       |                3 |             10 |
+|  TriggOut                                   | VGA_Control/VGA_Control/Width_Counter/Horz_Trig |                                                    |                4 |             10 |
+|  VGA_Control/FrGen/SecClock/Curent_X_reg[0] |                                                 | VGA_Control/FrGen/clear                            |                3 |             10 |
+|  TriggOut                                   |                                                 | VGA_Control/FrGen/SecClock/Count_Value[16]_i_1_n_0 |                4 |             16 |
+|  TriggOut                                   |                                                 |                                                    |               11 |             18 |
+|  CLK_IBUF_BUFG                              |                                                 | Q1/Clk_Counter/Count_Value[25]_i_1_n_0             |                7 |             25 |
++---------------------------------------------+-------------------------------------------------+----------------------------------------------------+------------------+----------------+
+
+

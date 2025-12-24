@@ -1,0 +1,68 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Mon Nov 24 15:40:48 2025
+| Host         : tld114.see.ed.ac.uk running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_control_sets -verbose -file Input_Output_control_sets_placed.rpt
+| Design       : Input_Output
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    15 |
+| Minimum Number of register sites lost to control set restrictions |    49 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              25 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             161 |           47 |
+| Yes          | No                    | No                     |              14 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             167 |           43 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------+-------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+|   Clock Signal  |                     Enable Signal                     |                      Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++-----------------+-------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+|  Clk_Counter[1] |                                                       | VGA_Control/VGA_CNTRL/CounterHorizontal/Colour_Out_reg[11] |                1 |              4 |
+|  Clk_IBUF_BUFG  | Time_Control/Ones_Coloumn/E[0]                        | Time_Control/Clock_Reset                                   |                1 |              4 |
+|  Clk_IBUF_BUFG  | Snake/Master_SM/data0                                 |                                                            |                2 |              4 |
+|  Clk_IBUF_BUFG  | Master_SM/p_0_in                                      | Master_SM/Snake_State_Y_reg[0][4]                          |                1 |              4 |
+|  Clk_IBUF_BUFG  | Master_SM/E[0]                                        | Time_Control/Clock_Reset                                   |                1 |              4 |
+|  Clk_IBUF_BUFG  | Snake/Snake_Update_Timer1/Snake_State_X_reg[0][0]     | Snake/Snake_Update_Timer2/Snake_State_X_reg[0][5]          |                2 |              5 |
+|  Clk_Counter[1] | VGA_Control/VGA_CNTRL/CounterHorizontal/Count_799Trig |                                                            |                4 |             10 |
+|  Clk_IBUF_BUFG  |                                                       |                                                            |                6 |             12 |
+|  Clk_Counter[1] |                                                       |                                                            |                6 |             13 |
+|  Clk_IBUF_BUFG  | Snake/Reached_Target                                  | Master_SM/Curr_Time_reg[1]                                 |                5 |             15 |
+|  Clk_IBUF_BUFG  |                                                       | nolabel_line114/Bit17Counter/Count_Value[16]_i_1__1_n_0    |                4 |             16 |
+|  Clk_IBUF_BUFG  |                                                       | Master_SM/Curr_Time_reg[1]                                 |                4 |             16 |
+|  Clk_Counter[1] |                                                       | VGA_Control/VGA_CNTRL/CounterHorizontal/SR[0]              |                4 |             17 |
+|  Clk_IBUF_BUFG  |                                                       | Reset_IBUF                                                 |               34 |            108 |
+|  Clk_IBUF_BUFG  | Snake/Snake_Update_Timer1/E[0]                        | Reset_IBUF                                                 |               33 |            135 |
++-----------------+-------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+
+

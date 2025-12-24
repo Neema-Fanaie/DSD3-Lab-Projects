@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/s2475012/Desktop/Week5.2.1/Week5.2.1.srcs/sources_1/imports/new/VGA_Display2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_Display2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/s2475012/Desktop/Week5.2.1/Week5.2.1.srcs/sim_1/new/VGA_Sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_Sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/s2475012/Desktop/Week5.2.1/Week5.2.1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

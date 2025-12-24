@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../Digital-Lab-W7Exam.srcs/sources_1/imports/Important SRC Files/Generic_counter.v"
+verilog xil_defaultlib  "../../../Digital-Lab-W7Exam.srcs/sources_1/imports/Important SRC Files/Multiplexer.v"
+verilog xil_defaultlib  "../../../Digital-Lab-W7Exam.srcs/sources_1/new/LEDs_speed.v"
+verilog xil_defaultlib  "../../../Digital-Lab-W7Exam.srcs/sim_1/new/LEDsTB.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

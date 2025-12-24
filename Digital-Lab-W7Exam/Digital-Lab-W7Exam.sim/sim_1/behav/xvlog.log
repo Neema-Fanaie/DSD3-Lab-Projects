@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/s2475012/Desktop/Digital-Lab-W7Exam/Digital-Lab-W7Exam.srcs/sources_1/imports/Important SRC Files/Generic_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Generic_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/s2475012/Desktop/Digital-Lab-W7Exam/Digital-Lab-W7Exam.srcs/sources_1/imports/Important SRC Files/Multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/s2475012/Desktop/Digital-Lab-W7Exam/Digital-Lab-W7Exam.srcs/sources_1/new/LEDs_speed.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDs_speed
+WARNING: [VRFC 10-986] literal value truncated to fit in 2 bits [/home/s2475012/Desktop/Digital-Lab-W7Exam/Digital-Lab-W7Exam.srcs/sources_1/new/LEDs_speed.v:11]
+ERROR: [VRFC 10-963] invalid initialization in declaration [/home/s2475012/Desktop/Digital-Lab-W7Exam/Digital-Lab-W7Exam.srcs/sources_1/new/LEDs_speed.v:4]
+WARNING: [VRFC 10-829] illegal initial value of input port Increase for module LEDs_speed ignored [/home/s2475012/Desktop/Digital-Lab-W7Exam/Digital-Lab-W7Exam.srcs/sources_1/new/LEDs_speed.v:4]
+ERROR: [VRFC 10-963] invalid initialization in declaration [/home/s2475012/Desktop/Digital-Lab-W7Exam/Digital-Lab-W7Exam.srcs/sources_1/new/LEDs_speed.v:5]
+WARNING: [VRFC 10-829] illegal initial value of input port Decrease for module LEDs_speed ignored [/home/s2475012/Desktop/Digital-Lab-W7Exam/Digital-Lab-W7Exam.srcs/sources_1/new/LEDs_speed.v:5]
+ERROR: [VRFC 10-1040] module LEDs_speed ignored due to previous errors [/home/s2475012/Desktop/Digital-Lab-W7Exam/Digital-Lab-W7Exam.srcs/sources_1/new/LEDs_speed.v:3]

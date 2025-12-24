@@ -1,0 +1,13 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2015.2/bin/unwrapped/lnx64.o/xelab -wto 39211b72f6a94256b15b1f1e0951f605 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot VGA_Sim_behav xil_defaultlib.VGA_Sim xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.VGA_Display2
+Compiling module xil_defaultlib.VGA_Sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot VGA_Sim_behav

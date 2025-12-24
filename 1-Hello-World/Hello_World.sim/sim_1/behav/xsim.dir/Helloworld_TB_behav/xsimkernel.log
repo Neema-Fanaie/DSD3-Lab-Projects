@@ -1,0 +1,7 @@
+Running: xsim.dir/Helloworld_TB_behav/xsimk -simmode gui -wdb Helloworld_TB_behav.wdb -simrunnum 0 -socket 36975
+Design successfully loaded
+Design Loading Memory Usage: 93084 KB (Peak: 93104 KB)
+Design Loading CPU Usage: 50 ms
+Simulation completed
+Simulation Memory Usage: 232352 KB (Peak: 297888 KB)
+Simulation CPU Usage: 50 ms

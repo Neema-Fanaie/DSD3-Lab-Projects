@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Oct 24 10:51:03 2025
+# Process ID: 15801
+# Log file: /home/s2475012/Desktop/4-Decoding-the-World/project_1.runs/impl_1/Decoding_world_wrapper.vdi
+# Journal file: /home/s2475012/Desktop/4-Decoding-the-World/project_1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Decoding_world_wrapper.tcl -notrace

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Nov  1 15:51:19 2025
+# Process ID: 623521
+# Log file: /home/s2475012/Desktop/7-World-of-State-Machines/7-World-of-State-Machines.runs/synth_1/Sync_Mach.vds
+# Journal file: /home/s2475012/Desktop/7-World-of-State-Machines/7-World-of-State-Machines.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Sync_Mach.tcl -notrace

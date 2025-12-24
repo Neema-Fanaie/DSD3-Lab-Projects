@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Oct 13 14:49:17 2025
+# Process ID: 32189
+# Log file: /home/s2475012/Week5.2.1/Week5.2.1.runs/impl_1/VGA_Wrapper2.vdi
+# Journal file: /home/s2475012/Week5.2.1/Week5.2.1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source VGA_Wrapper2.tcl -notrace
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step init_design"
+    (file "VGA_Wrapper2.tcl" line 48)
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 13 14:49:21 2025...

@@ -1,0 +1,701 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Nov 22 17:57:07 2025
+# Process ID: 60469
+# Log file: /home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.runs/synth_1/Input_Output.vds
+# Journal file: /home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Input_Output.tcl -notrace
+Command: synth_design -top Input_Output -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -3614 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+WARNING: [Synth 8-992] Strobe_In is already implicitly declared earlier [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/7Seg_Wrapper.v:48]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 930.535 ; gain = 160.559 ; free physical = 25547 ; free virtual = 44759
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Input_Output' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Input-Output.v:5]
+INFO: [Synth 8-638] synthesizing module 'Play_SM' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/Play_SM.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Play_SM' (1#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/Play_SM.v:3]
+INFO: [Synth 8-638] synthesizing module 'MSM' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/MSM.v:3]
+INFO: [Synth 8-226] default block is never used [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/MSM.v:31]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/MSM.v:45]
+WARNING: [Synth 8-567] referenced signal 'Enable' should be on the sensitivity list [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/MSM.v:30]
+WARNING: [Synth 8-567] referenced signal 'Play_State' should be on the sensitivity list [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/MSM.v:30]
+WARNING: [Synth 8-567] referenced signal 'Current_Time' should be on the sensitivity list [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/MSM.v:30]
+INFO: [Synth 8-256] done synthesizing module 'MSM' (2#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/MSM.v:3]
+WARNING: [Synth 8-350] instance 'Master_SM' of module 'MSM' requires 11 connections, but only 10 given [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Input-Output.v:51]
+INFO: [Synth 8-638] synthesizing module 'Navigation_State_Machine' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Navigation_State_Machine.v:3]
+INFO: [Synth 8-226] default block is never used [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Navigation_State_Machine.v:24]
+INFO: [Synth 8-256] done synthesizing module 'Navigation_State_Machine' (3#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Navigation_State_Machine.v:3]
+INFO: [Synth 8-638] synthesizing module 'Snake_Control' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:3]
+	Parameter Snake_Length bound to: 20 - type: integer 
+	Parameter Small_Snake bound to: 6 - type: integer 
+	Parameter Max_X bound to: 159 - type: integer 
+	Parameter Max_Y bound to: 119 - type: integer 
+	Parameter Red bound to: 12'b000000001111 
+	Parameter Blue bound to: 12'b100000000000 
+	Parameter Yellow bound to: 12'b000011111111 
+	Parameter Green bound to: 12'b000011110000 
+	Parameter Black bound to: 12'b000000000000 
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+	Parameter Counter_Width bound to: 25 - type: integer 
+	Parameter Counter_Max bound to: 5000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter' (4#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+WARNING: [Synth 8-350] instance 'Counter_1' of module 'Generic_Counter' requires 5 connections, but only 4 given [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:151]
+INFO: [Synth 8-226] default block is never used [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:74]
+WARNING: [Synth 8-324] index 20 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 20 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 20 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 20 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 21 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 21 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 21 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 21 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 22 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 22 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 22 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 22 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 23 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 23 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 23 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 23 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 24 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 24 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 24 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 24 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 25 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 25 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 25 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 25 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 26 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 26 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 26 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 26 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 27 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 27 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 27 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 27 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 28 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 28 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 28 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 28 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 29 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 29 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 29 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 29 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 30 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 30 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 30 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 30 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 31 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 31 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 31 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 31 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 32 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 32 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 32 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 32 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 33 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 33 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 33 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 33 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 34 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 34 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 34 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 34 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 35 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 35 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 35 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 35 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 36 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 36 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 36 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 36 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 37 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 37 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 37 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 37 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 38 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 38 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 38 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 38 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 39 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 39 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 39 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 39 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 40 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 40 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 40 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 40 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 41 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 41 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 41 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 41 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 42 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 42 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 42 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 42 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 43 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 43 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 43 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 43 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 44 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 44 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 44 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+WARNING: [Synth 8-324] index 44 out of range [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:105]
+INFO: [Common 17-14] Message 'Synth 8-324' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'Snake_Control' (5#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v:3]
+INFO: [Synth 8-638] synthesizing module 'VGA_Program' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/VGA_Program.v:3]
+INFO: [Synth 8-638] synthesizing module 'Frame_Generator' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Frame_Generator.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Frame_Generator' (6#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Frame_Generator.v:3]
+INFO: [Synth 8-638] synthesizing module 'VGA_Interface' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/VGA_Interface.v:3]
+	Parameter VertTimeToPulseWidthEnd bound to: 10'b0000000010 
+	Parameter VertTimeToBackPorchEnd bound to: 10'b0000011111 
+	Parameter VertTimeToDisplayTimeEnd bound to: 10'b0111111111 
+	Parameter VertTimeToFrontPorchEnd bound to: 10'b1000001001 
+	Parameter HorzTimeToPulseWidthEnd bound to: 10'b0001100000 
+	Parameter HorzTimeToBackPorchEnd bound to: 10'b0010010000 
+	Parameter HorzTimeToDisplayTimeEnd bound to: 10'b1100010000 
+	Parameter HorzTimeToFrontPorchEnd bound to: 10'b1100100000 
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized0' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+	Parameter Counter_Width bound to: 10 - type: integer 
+	Parameter Counter_Max bound to: 799 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized0' (6#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized1' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+	Parameter Counter_Width bound to: 10 - type: integer 
+	Parameter Counter_Max bound to: 520 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized1' (6#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+INFO: [Synth 8-256] done synthesizing module 'VGA_Interface' (7#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/VGA_Interface.v:3]
+INFO: [Synth 8-256] done synthesizing module 'VGA_Program' (8#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/VGA_Program.v:3]
+INFO: [Synth 8-638] synthesizing module 'Target_Generator' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Target_Generator.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Target_Generator' (9#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Target_Generator.v:3]
+INFO: [Synth 8-638] synthesizing module 'Score_Counter' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Score_Counter.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Score_Counter' (10#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Score_Counter.v:3]
+INFO: [Synth 8-638] synthesizing module 'Timer' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/Timer.v:3]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized2' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+	Parameter Counter_Width bound to: 27 - type: integer 
+	Parameter Counter_Max bound to: 99999999 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized2' (10#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+WARNING: [Synth 8-350] instance 'Clock_Base' of module 'Generic_Counter' requires 5 connections, but only 4 given [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/Timer.v:17]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized3' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+	Parameter Counter_Width bound to: 4 - type: integer 
+	Parameter Counter_Max bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized3' (10#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized4' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+	Parameter Counter_Width bound to: 4 - type: integer 
+	Parameter Counter_Max bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized4' (10#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+WARNING: [Synth 8-350] instance 'Tens_Coloumn' of module 'Generic_Counter' requires 5 connections, but only 4 given [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/Timer.v:36]
+INFO: [Synth 8-256] done synthesizing module 'Timer' (11#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/Timer.v:3]
+WARNING: [Synth 8-387] label required on module instance [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Input-Output.v:126]
+INFO: [Synth 8-638] synthesizing module 'Seg7_Wrapper' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/7Seg_Wrapper.v:3]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized5' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+	Parameter Counter_Width bound to: 17 - type: integer 
+	Parameter Counter_Max bound to: 99999 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized5' (11#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+WARNING: [Synth 8-350] instance 'Bit17Counter' of module 'Generic_Counter' requires 5 connections, but only 4 given [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/7Seg_Wrapper.v:19]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized6' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+	Parameter Counter_Width bound to: 2 - type: integer 
+	Parameter Counter_Max bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized6' (11#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v:3]
+WARNING: [Synth 8-350] instance 'StrobeCounter' of module 'Generic_Counter' requires 5 connections, but only 4 given [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/7Seg_Wrapper.v:29]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Multiplexer_attempt.v:3]
+INFO: [Synth 8-226] default block is never used [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Multiplexer_attempt.v:13]
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer' (12#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Multiplexer_attempt.v:3]
+INFO: [Synth 8-638] synthesizing module 'Seg7Control' [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Seg7Control.v:3]
+INFO: [Synth 8-226] default block is never used [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Seg7Control.v:13]
+INFO: [Synth 8-226] default block is never used [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Seg7Control.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Seg7Control' (13#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Seg7Control.v:3]
+WARNING: [Synth 8-3848] Net Strobe_In in module/entity Seg7_Wrapper does not have driver. [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/7Seg_Wrapper.v:40]
+INFO: [Synth 8-256] done synthesizing module 'Seg7_Wrapper' (14#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/7Seg_Wrapper.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Input_Output' (15#1) [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Input-Output.v:5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 963.785 ; gain = 193.809 ; free physical = 25507 ; free virtual = 44720
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Mux:Control[1] to constant 0 [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/7Seg_Wrapper.v:39]
+WARNING: [Synth 8-3295] tying undriven pin Mux:Control[0] to constant 0 [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/new/7Seg_Wrapper.v:39]
+WARNING: [Synth 8-3295] tying undriven pin Master_SM:Play_State[1] to constant 0 [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Input-Output.v:51]
+WARNING: [Synth 8-3295] tying undriven pin Master_SM:Play_State[0] to constant 0 [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Input-Output.v:51]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 963.785 ; gain = 193.809 ; free physical = 25515 ; free virtual = 44728
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/constrs_1/imports/Constraints/Snake_GameXDC.xdc]
+Finished Parsing XDC File [/home/s2475012/Desktop/Snake_Game++/Snake_Game_2015V.srcs/constrs_1/imports/Constraints/Snake_GameXDC.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1290.848 ; gain = 0.000 ; free physical = 25348 ; free virtual = 44560
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25344 ; free virtual = 44557
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25344 ; free virtual = 44557
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25344 ; free virtual = 44556
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "Next_State" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Frame_Count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Snake_State_X" won't be mapped to RAM because address size (25) is larger than maximum supported(18)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25329 ; free virtual = 44541
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 5     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 25    
+	                7 Bit    Registers := 22    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 49    
+	   4 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 5     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  16 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+	   5 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Play_SM 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module MSM 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Navigation_State_Machine 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Generic_Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Snake_Control 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 21    
+	                7 Bit    Registers := 20    
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 48    
+	   4 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+Module Generic_Counter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Generic_Counter__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module VGA_Interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module VGA_Program 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module Target_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+Module Score_Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module Generic_Counter__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Generic_Counter__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Generic_Counter__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Generic_Counter__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Generic_Counter__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module Multiplexer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module Seg7Control 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module Seg7_Wrapper 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25329 ; free virtual = 44541
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "Snake_State_X" won't be mapped to RAM because address size (25) is larger than maximum supported(18)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25329 ; free virtual = 44541
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25329 ; free virtual = 44541
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Snake/Colour_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\VGA_Control/VGA_CNTRL/Colour_Out_reg[10] )
+WARNING: [Synth 8-3332] Sequential element (\Snake/Counter_1/Trigger_Out_reg ) is unused and will be removed from module Input_Output.
+WARNING: [Synth 8-3332] Sequential element (\Snake/Colour_reg[10] ) is unused and will be removed from module Input_Output.
+WARNING: [Synth 8-3332] Sequential element (\Snake/Colour_reg[9] ) is unused and will be removed from module Input_Output.
+WARNING: [Synth 8-3332] Sequential element (\Snake/Colour_reg[8] ) is unused and will be removed from module Input_Output.
+WARNING: [Synth 8-3332] Sequential element (\VGA_Control/VGA_CNTRL/Colour_Out_reg[10] ) is unused and will be removed from module Input_Output.
+WARNING: [Synth 8-3332] Sequential element (\VGA_Control/VGA_CNTRL/Colour_Out_reg[9] ) is unused and will be removed from module Input_Output.
+WARNING: [Synth 8-3332] Sequential element (\VGA_Control/VGA_CNTRL/Colour_Out_reg[8] ) is unused and will be removed from module Input_Output.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25306 ; free virtual = 44519
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25306 ; free virtual = 44519
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25306 ; free virtual = 44519
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25259 ; free virtual = 44471
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25259 ; free virtual = 44471
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25227 ; free virtual = 44440
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25227 ; free virtual = 44440
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25227 ; free virtual = 44440
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25227 ; free virtual = 44440
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25227 ; free virtual = 44440
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25227 ; free virtual = 44440
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    31|
+|3     |LUT1   |    94|
+|4     |LUT2   |    48|
+|5     |LUT3   |    74|
+|6     |LUT4   |    56|
+|7     |LUT5   |    66|
+|8     |LUT6   |   259|
+|9     |FDCE   |     2|
+|10    |FDRE   |   409|
+|11    |FDSE   |   120|
+|12    |IBUF   |     7|
+|13    |OBUF   |    26|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------+--------------------------------+------+
+|      |Instance                |Module                          |Cells |
++------+------------------------+--------------------------------+------+
+|1     |top                     |                                |  1194|
+|2     |  Master_SM             |MSM                             |    15|
+|3     |  Nav_SM                |Navigation_State_Machine        |     6|
+|4     |  P_SM                  |Play_SM                         |     9|
+|5     |  SC                    |Score_Counter                   |    38|
+|6     |  Snake                 |Snake_Control                   |   599|
+|7     |    Counter_1           |Generic_Counter                 |    91|
+|8     |  Target_Control        |Target_Generator                |    51|
+|9     |  Time_Control          |Timer                           |   114|
+|10    |    Clock_Base          |Generic_Counter__parameterized2 |    94|
+|11    |    Ones_Coloumn        |Generic_Counter__parameterized3 |    10|
+|12    |    Tens_Coloumn        |Generic_Counter__parameterized4 |    10|
+|13    |  VGA_Control           |VGA_Program                     |   274|
+|14    |    VGA_CNTRL           |VGA_Interface                   |   270|
+|15    |      CounterHorizontal |Generic_Counter__parameterized0 |    41|
+|16    |      CounterVerticle   |Generic_Counter__parameterized1 |    35|
+|17    |  nolabel_line126       |Seg7_Wrapper                    |    53|
+|18    |    Bit17Counter        |Generic_Counter__parameterized5 |    43|
+|19    |    Seg7                |Seg7Control                     |     2|
+|20    |    StrobeCounter       |Generic_Counter__parameterized6 |     4|
++------+------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25227 ; free virtual = 44440
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1290.848 ; gain = 79.281 ; free physical = 25227 ; free virtual = 44440
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1290.848 ; gain = 520.871 ; free physical = 25227 ; free virtual = 44440
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+70 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1306.855 ; gain = 428.379 ; free physical = 25227 ; free virtual = 44440
+report_utilization: Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.69 . Memory (MB): peak = 1338.871 ; gain = 0.000 ; free physical = 25199 ; free virtual = 44412
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 22 17:57:29 2025...

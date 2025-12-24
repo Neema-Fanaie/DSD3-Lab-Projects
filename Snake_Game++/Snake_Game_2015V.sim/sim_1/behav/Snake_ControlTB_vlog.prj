@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../Snake_Game_2015V.srcs/sources_1/imports/SRCs/Generic_counter.v"
+verilog xil_defaultlib  "../../../Snake_Game_2015V.srcs/sources_1/imports/SRCs/Snake_Control.v"
+verilog xil_defaultlib  "../../../Snake_Game_2015V.srcs/sources_1/imports/SRCs/Target_Generator.v"
+verilog xil_defaultlib  "../../../Snake_Game_2015V.srcs/sim_1/imports/Simulations/Snake_ControlTB.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

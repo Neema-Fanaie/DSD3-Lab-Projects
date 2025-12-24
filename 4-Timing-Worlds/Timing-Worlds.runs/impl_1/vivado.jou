@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Oct 24 10:55:49 2025
+# Process ID: 17784
+# Log file: /home/s2475012/Desktop/4-Timing-Worlds/Timing-Worlds.runs/impl_1/Counting_worlds.vdi
+# Journal file: /home/s2475012/Desktop/4-Timing-Worlds/Timing-Worlds.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Counting_worlds.tcl -notrace

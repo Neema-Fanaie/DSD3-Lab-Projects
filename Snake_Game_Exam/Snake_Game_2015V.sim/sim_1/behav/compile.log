@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/s2475012/Desktop/Snake_Game_Exam/Snake_Game_2015V.srcs/sources_1/imports/SRCs/Target_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Target_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/s2475012/Desktop/Snake_Game_Exam/Snake_Game_2015V.srcs/sim_1/imports/Simulations/Target_ControlTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Target_ControlTB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/s2475012/Desktop/Snake_Game_Exam/Snake_Game_2015V.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
