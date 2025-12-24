@@ -1,3 +1,59 @@
+# Week 1 Ignores
 1_Hello_LotsOf_Worlds/Hello_lots_of_Worlds.cache
 1_Hello_LotsOf_Worlds/Hello_lots_of_Worlds.hw
 1_Hello_LotsOf_Worlds/Hello_lots_of_Worlds.xpr
+
+1_Hello_World/Hello_World.cache
+1_Hello_World/Hello_World.hw
+1_Hello_World/Hello_World.xpr
+
+# Week 2 Ignores
+2-D-Flip-Flop/Week2.1.cache
+2-D-Flip-Flop/Week2.1.hw
+2-D-Flip-Flop/Week2.1.xpr
+
+2_Shift_Register/ShiftRegister.cache
+2_Shift_Register/ShiftRegister.hw
+2_Shift_Register/ShiftRegister.xpr
+
+# Week 3 Ignores
+3_Counting_The_World/Week3.1.cache
+3_Counting_The_World/Week3.1.hw
+3_Counting_The_World/Week3.1.xpr
+
+3_Shift_Reg2D/Shift_Reg2d.cache
+3_Shift_Reg2D/Shift_Reg2d.hw
+3_Shift_Reg2D/Shift_Reg2d.xpr
+
+# Week 4 Ignores
+4_Decoding_the_World/project_1.cache
+4_Decoding_the_World/project_1.hw
+4_Decoding_the_World/project_1.xpr
+
+4_Timing_Worlds/Timing-Worlds.cache
+4_Timing_Worlds/Timing-Worlds.hw
+4_Timing_Worlds/Timing-Worlds.xpr
+
+# Week 5 Ignores
+5_Colour_World/Week5.2.1.cache
+5_Colour_World/Week5.2.1.hw
+5_Colour_World/Week5.2.1.xpr
+
+5_Timing_World_Decimal/Week 5.1.cache
+5_Timing_World_Decimal/Week 5.1.hw
+5_Timing_World_Decimal/Week 5.1.xpr
+
+# Week 7 Ignores
+Digital_Lab_W7Exam/Digital-Lab-W7Exam.cache
+Digital_Lab_W7Exam/Digital-Lab-W7Exam.hw
+Digital_Lab_W7Exam/Digital-Lab-W7Exam.xpr
+
+# Week 8 Ignores
+8_World_of_State_Machines/7-World-of-State-Machines.cache
+8_World_of_State_Machines/7-World-of-State-Machines.hw
+8_World_of_State_Machines/7-World-of-State-Machines.xpr
+
+# Snake Game Ignores
+Snake_Game_2015V/Snake_Game_2015V.cache
+Snake_Game_2015V/Snake_Game_2015V.hw
+Snake_Game_2015V/Snake_Game_2015V.xpr
