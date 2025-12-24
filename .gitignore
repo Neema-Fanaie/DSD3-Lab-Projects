@@ -8,9 +8,9 @@
 1_Hello_World/Hello_World.xpr
 
 # Week 2 Ignores
-2-D-Flip-Flop/Week2.1.cache
-2-D-Flip-Flop/Week2.1.hw
-2-D-Flip-Flop/Week2.1.xpr
+2_D_Flip_Flop/Week2.1.cache
+2_D_Flip_Flop/Week2.1.hw
+2_D_Flip_Flop/Week2.1.xpr
 
 2_Shift_Register/ShiftRegister.cache
 2_Shift_Register/ShiftRegister.hw
@@ -57,3 +57,11 @@ Digital_Lab_W7Exam/Digital-Lab-W7Exam.xpr
 Snake_Game_2015V/Snake_Game_2015V.cache
 Snake_Game_2015V/Snake_Game_2015V.hw
 Snake_Game_2015V/Snake_Game_2015V.xpr
+
+Snake_Game_Exam/Snake_Game_2015V.cache
+Snake_Game_Exam/Snake_Game_2015V.hw
+Snake_Game_Exam/Snake_Game_2015V.xpr
+
+Snake_Game++/Snake_Game_2015V.cache
+Snake_Game++/Snake_Game_2015V.hw
+Snake_Game++/Snake_Game_2015V.xpr
