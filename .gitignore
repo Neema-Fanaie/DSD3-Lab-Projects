@@ -6,7 +6,6 @@
 1_Hello_World/Hello_World.cache
 1_Hello_World/Hello_World.hw
 1_Hello_World/Hello_World.xpr
-
 # Week 2 Ignores
 2_D_Flip_Flop/Week2.1.cache
 2_D_Flip_Flop/Week2.1.hw
@@ -65,3 +64,9 @@ Snake_Exam/Snake_Game_2015V.xpr
 Snake_Game_Extension/Snake_Game_2015V.cache
 Snake_Game_Extension/Snake_Game_2015V.hw
 Snake_Game_Extension/Snake_Game_2015V.xpr
+
+#CPU Development (Incomplete)
+CPU_Design/CPU_Attempt.cache
+CPU_Design/CPU_Attempt.hw
+CPU_Design/CPU_Attempt.xpr
+CPU_Design/CPU_Attempt.ip_user_files

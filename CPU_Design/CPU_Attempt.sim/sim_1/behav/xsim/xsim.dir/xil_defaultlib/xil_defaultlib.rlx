@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Neema/Desktop/CPU_Attempt/CPU_Attempt.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/Neema/Desktop/CPU_Attempt/CPU_Attempt.srcs/sim_1/new/CPU_TB.v,1768065210,verilog,,,,CPU_TB,,,,,,,,
+C:/Users/Neema/Desktop/CPU_Attempt/CPU_Attempt.srcs/sim_1/new/Testing_Features.v,1768055404,verilog,,,,Testing_Features,,,,,,,,
+C:/Users/Neema/Desktop/CPU_Attempt/CPU_Attempt.srcs/sources_1/new/CPU_Wrapper.v,1768065135,verilog,,C:/Users/Neema/Desktop/CPU_Attempt/CPU_Attempt.srcs/sim_1/new/CPU_TB.v,,CPU_Wrapper,,,,,,,,
